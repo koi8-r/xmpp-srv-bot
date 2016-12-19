@@ -1,0 +1,6 @@
+/xmpp-srv-bot.iml
+/.gradle
+/.idea
+/build
+/target
+/xmpp.properties

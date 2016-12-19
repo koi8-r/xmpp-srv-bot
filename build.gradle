@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    sourceCompatibility = '1.7'
+    targetCompatibility = '1.7'
+}
+
+def smackVer = '4.1.9'
+
+dependencies {
+    compile group:'org.igniterealtime.smack', name:'smack-core',          version:smackVer
+    compile group:'org.igniterealtime.smack', name:'smack-tcp',           version:smackVer
+    compile group:'org.igniterealtime.smack', name:'smack-im',            version:smackVer
+    compile group:'org.igniterealtime.smack', name:'smack-sasl-provided', version:smackVer
+    compile group:'org.igniterealtime.smack', name:'smack-java7',         version:smackVer
+}
